@@ -1,64 +1,152 @@
-<div><!-- *** HoneyBook Widget Form *** -->
-    <style type="text/css">
-        #hb_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-        #hb_embed_signup form {display:block; position:relative; text-align:left;}
-        #hb_embed_signup .hb-field-group {clear:left; position:relative; width:96%;padding-bottom: 1%;min-height: 20px;display: inline-block;margin: 4px 0;}
-        #hb_embed_signup .hb-field-group input{border: 1px solid #7bc8cd;}
-        #hb_embed_signup .hb-field-group input[type],
-        #hb_embed_signup .hb-field-group textarea {font-size: 12px;display:inline; width:inherit; height: 27px; border: 1px solid #7bc8cd; padding:4px 1%; -webkit-appearance:none;}
-        #hb_embed_signup .hb-field-group textarea{height: 40px;}
-        #hb_embed_signup .hb-field-group label {display:block; margin-bottom:3px;font-size: 13px;color: inherit;}
-        #hb_embed_signup .button {background-color: #7bc8cd; -webkit-appearance:none; clear:both; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
-        #hb_embed_signup .hb-field-group .asterisk {position:relative; float:right; right:5%;}
-        #hb_embed_signup .asterisk {color:#c60; font-size:150%;}
-        </style>
-    <div id="hb_embed_signup">
-        <form id="hb-embedded-subscribe-form" class="validate" action="https://honeybook-payments-dev.herokuapp.com/api/v1/couple_cards/widget_create_user_and_workspace" method="post" name="hb-embedded-subscribe-form" onsubmit="document.getElementById('hb-embedded-subscribe').innerHTML='Thank you!'">
-            
-            <div id="hb_embed_signup_scroll">
-                <input id="vendor-email" name="vendor_email" value="vendor@vendor.com" type="hidden">
-                    <input id="widget-token" name="widget_token" value="8462bf3227decf5a1cf0b048c4de96dab2657abd" type="hidden">
-                        <div class="hb-field-group">
-                            <label for="hbf-client-email">Email Address<span class="asterisk">*</span></label>
-                            <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="Email Address" required="true">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-full-name">Full Name<span class="asterisk">*</span></label>
-                            <input id="hbf-full-name" class="required" type="text" name="full_name" placeholder="Full Name" required="true">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-phone">Phone</label>
-                            <input id="hbf-phone" type="text" name="phone_number" placeholder="Phone">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-event-date">Event Date</label>
-                            <input id="hbf-event-date" type="text" name="event_date" placeholder="MM/DD/YY">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-location">Location</label>
-                            <input id="hbf-location" type="text" name="event_location" placeholder="Location">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-budget">Planning budget?</label>
-                            <input id="hbf-budget" type="text" name="event_budget" placeholder="Planning budget?">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-event-details">Tell us about your event?</label>
-                            <textarea id="hbf-event-details" type="text" name="event_details" placeholder="Tell us about your event?"></textarea>
+
+<!-- saved from url=(0046)http://www.amazaespecialevents.com/contact.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Amazáe Special Events - Contact</title>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="author" content="John Vuong">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="keywords" content="special,event,organize,planner,organizer,coordination,party,coordinator,orchestrate,gala,San Jose,wedding consultant,Mountain View,Sunnyvale,San Francisco,Bay Area,event management,organization,celebration,commitment,birthday,party,anniversary,wedding planning,exclusive,design,grand,bride,groom,amazae,Celebrity Event and Wedding Planner,weekday elopement,destination event,fundraising,destination management,social media bible,fusion marketing bible,keynote speaker,high end,elite,production,Preston Bailey,Los Altos,Los Gatos,Palo Alto,Oakland,Menlo Park,Hillsborough,San Francisco Bay Area">
+  <meta name="description" content="Amazae Special Events specializes in wedding and exclusive event design for your wedding or special event to be everything you imagined.">
+<link rel="icon" type="image/png" href="http://www.amazaespecialevents.com/images/amazae-favicon-16x16.png">
+
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/resets.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/prettyPhoto.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/default.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/orman.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/pascal.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/nivo-slider.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/jquery-ui-1.8.17.custom.css" type="text/css"> 
+  <link rel="stylesheet" href="./Amazáe Special Events - Contact_files/style.css" type="text/css"> 
+<!--[if IE]>
+<link rel=stylesheet href="css/ie.css" type="text/css">
+<![endif]-->
+  <script type="text/javascript" async="" src="./Amazáe Special Events - Contact_files/ga.js"></script><script type="text/javascript" src="./Amazáe Special Events - Contact_files/jquery.js"> </script>
+  <script type="text/javascript" src="./Amazáe Special Events - Contact_files/jquery.tools.min.js"> </script>
+  <script type="text/javascript" src="./Amazáe Special Events - Contact_files/jquery.prettyPhoto.js"> </script>
+  <script type="text/javascript" src="./Amazáe Special Events - Contact_files/jquery.nivo.slider.js"> </script>
+  <script type="text/javascript" src="./Amazáe Special Events - Contact_files/jquery.validate.js"> </script>
+  <script type="text/javascript" src="./Amazáe Special Events - Contact_files/jquery-ui-1.8.17.custom.min.js"> </script>
+  <script type="text/javascript" src="./Amazáe Special Events - Contact_files/application.js"> </script>
+<style type="text/css"></style></head>
+<body> 
+  <div id="content-wrapper">
+
+  </div>
+    <div id="main">
+      <div id="contact-pane">
+        <img src="./Amazáe Special Events - Contact_files/studio.jpg">
+        <div id="contact-info">
+          <div id="contact-by-appointment-only"></div>
+          <div id="contact-address">
+            <ul class="contact-info">
+              <li>Amazáe Special Events Design Studio</li>
+              <li>1984 The Alameda, Suite #2</li>
+              <li>San Jose, CA 95126</li>
+            </ul>
+          </div>
+          <div id="contact-phone-email">
+            <ul class="contact-info">
+              <li>408.249.2184 | o</li>
+              <li>408.249.2184 | f</li>
+              <li>408.218.4753 | direct</li>
+              <li><a href="mailto:info@amazae.com">info@amazae.com</a></li>
+            </ul>
+          </div> 
+        </div>
+
+                <div id="contact-form">
+                    <div><!-- *** HoneyBook Widget Form *** -->
+                        <style type="text/css">
+                            #hb_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
+                            #hb_embed_signup form {display:block; position:relative; text-align:left;}
+                            #hb_embed_signup .hb-field-group {clear:left; position:relative; width:96%;padding-bottom: 1%;min-height: 20px;display: inline-block;margin: 4px 0;}
+                            #hb_embed_signup .hb-field-group input{border: 1px solid #7bc8cd;}
+                            #hb_embed_signup .hb-field-group input[type],
+                            #hb_embed_signup .hb-field-group textarea {font-size: 12px;display:inline; width:inherit; height: 27px; border: 1px solid #7bc8cd; padding:4px 1%; -webkit-appearance:none;}
+                            #hb_embed_signup .hb-field-group textarea{height: 40px;}
+                            #hb_embed_signup .hb-field-group label {display:block; margin-bottom:3px;font-size: 13px;color: inherit;}
+                            #hb_embed_signup .button {background-color: #7bc8cd; -webkit-appearance:none; clear:both; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+                            #hb_embed_signup .hb-field-group .asterisk {position:relative; float:right; right:5%;}
+                            #hb_embed_signup .asterisk {color:#c60; font-size:150%;}
+                            </style>
+                        <div id="hb_embed_signup">
+                            <form id="hb-embedded-subscribe-form" class="validate" action="https://honeybook-payments-dev.herokuapp.com/api/v1/couple_cards/widget_create_user_and_workspace" method="post" name="hb-embedded-subscribe-form" onsubmit="document.getElementById('hb-embedded-subscribe').innerHTML='Thank you!'">
+                                
+                                <div id="hb_embed_signup_scroll">
+                                    <input id="vendor-email" name="vendor_email" value="vendor@vendor.com" type="hidden">
+                                        <input id="widget-token" name="widget_token" value="8462bf3227decf5a1cf0b048c4de96dab2657abd" type="hidden">
+                                            <div class="hb-field-group">
+                                                <label for="hbf-client-email">Email Address<span class="asterisk">*</span></label>
+                                                <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="Email Address" required="true">
+                                                    </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-full-name">Full Name<span class="asterisk">*</span></label>
+                                                <input id="hbf-full-name" class="required" type="text" name="full_name" placeholder="Full Name" required="true">
+                                                    </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-phone">Phone</label>
+                                                <input id="hbf-phone" type="text" name="phone_number" placeholder="Phone">
+                                                    </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-event-date">Event Date</label>
+                                                <input id="hbf-event-date" type="text" name="event_date" placeholder="MM/DD/YY">
+                                                    </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-location">Location</label>
+                                                <input id="hbf-location" type="text" name="event_location" placeholder="Location">
+                                                    </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-budget">Planning budget?</label>
+                                                <input id="hbf-budget" type="text" name="event_budget" placeholder="Planning budget?">
+                                                    </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-event-details">Tell us about your event?</label>
+                                                <textarea id="hbf-event-details" type="text" name="event_details" placeholder="Tell us about your event?"></textarea>
+                                            </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-services">What services are you interested in?</label>
+                                                <textarea id="hbf-services" type="text" name="event_services" placeholder="What services are you interested in?"></textarea>
+                                            </div>
+                                            <div class="hb-field-group">
+                                                <label for="hbf-hear-about">How did you hear about?</label>
+                                                <textarea id="hbf-hear-about" type="text" name="how_client_hear_about" placeholder="How did you hear about?"></textarea>
+                                            </div>
+                                            <button id="hb-embedded-subscribe" class="button" type="submit">Send</button>
+                                            </div>
+                            </form>
                         </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-services">What services are you interested in?</label>
-                            <textarea id="hbf-services" type="text" name="event_services" placeholder="What services are you interested in?"></textarea>
-                        </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-hear-about">How did you hear about?</label>
-                            <textarea id="hbf-hear-about" type="text" name="how_client_hear_about" placeholder="How did you hear about?"></textarea>
-                        </div>
-                        <button id="hb-embedded-subscribe" class="button" type="submit">Send</button>
-                        </div>
-        </form>
+                        
+                        <!--End hb_embed_signup-->
+                        <!--====================-->
+                    </div>
+        </div>
+      </div>
     </div>
-    
-    <!--End hb_embed_signup-->
-    <!--====================-->
-</div>
+    <div id="footer">
+      <a href="http://twitter.com/amazae"><div id="twitter-badge" class="twitter-icon"></div></a>
+      <a href="http://www.facebook.com/pages/Amaz%C3%A1e-Special-Events/54812631230?ref=ts"><div id="facebook-badge" class="facebook-icon"></div></a>
+      <a href="http://www.linkedin.com/in/amazaespecialevents"><div id="linkedin-badge" class="linkedin-icon"></div></a>
+      <a href="http://www.yelp.com/biz/amazae-special-events-san-jose"><div id="yelp-badge" class="yelp-icon"></div></a>
+      <div id="copyright-info">© 2012 Amazáe Special Events</div>
+    </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29091913-1']);
+  _gaq.push(['_setDomainName', 'amazaespecialevents.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </div>
+  <div id="background-runner"></div>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
