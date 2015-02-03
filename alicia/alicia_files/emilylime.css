@@ -1,0 +1,26 @@
+/* @license
+ * MyFonts Webfont Build ID 2571871, 2013-06-03T15:48:09-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Emily Lime Standard by Emily Lime
+ * URL: http://www.myfonts.com/fonts/emily-lime/emily-lime/standard/
+ * Copyright: Copyright (c) 2011 by Emily Lime Design. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2571871
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/273e5f");
+
+  
+@font-face {font-family: 'EmilyLimeStandard';src: url('273E5F_0_0.eot');src: url('273E5F_0_0.eot?#iefix') format('embedded-opentype'),url('273E5F_0_0.woff') format('woff'),url('273E5F_0_0.ttf') format('truetype');}
+ 
