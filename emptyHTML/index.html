@@ -5,73 +5,86 @@
 <body>
 
 
-<div><!-- *** HoneyBook Widget Form *** -->
+<div>
+    <!-- *** HoneyBook Widget Form *** -->
     <style type="text/css">
         #hb_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
         #hb_embed_signup form {display:block; position:relative; text-align:left;}
         #hb_embed_signup .hb-field-group {clear:left; position:relative; width:96%;padding-bottom: 1%;min-height: 20px;display: inline-block;margin: 4px 0;}
-        #hb_embed_signup .hb-field-group input{border: 1px solid #a61c00;}
+        #hb_embed_signup .hb-field-group input{border: 1px solid #ffd966;}
         #hb_embed_signup .hb-field-group input[type],
-        #hb_embed_signup .hb-field-group textarea {font-size: 12px;display:inline; width:inherit; height: 27px; border: 1px solid #a61c00; padding:4px 1%; -webkit-appearance:none;}
+        #hb_embed_signup .hb-field-group textarea {font-size: 12px;display:inline; width:inherit; height: 27px; border: 1px solid #ffd966; padding:4px 1%; -webkit-appearance:none; margin-bottom:0;}
         #hb_embed_signup .hb-field-group textarea{height: 40px;}
         #hb_embed_signup .hb-field-group label {display:block; margin-bottom:3px;font-size: 13px;color: inherit;}
-        #hb_embed_signup .button {background-color: #a61c00; -webkit-appearance:none; clear:both; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
-        #hb_embed_signup .hb-field-group .asterisk {position:relative; float:right; right:5%;}
+        #hb_embed_signup .button {background-color: #ffd966; -webkit-appearance:none; clear:both; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+        #hb_embed_signup .hb-field-group .asterisk {position:relative; float:right; right:5%; top: 5px;}
         #hb_embed_signup .asterisk {color:#c60; font-size:150%;}
-    </style>
+        
+        </style>
+    
     <div id="hb_embed_signup">
-        <form id="hb-embedded-subscribe-form" class="validate" action="http://localhost:3000/api/v1/couple_cards/widget_create_user_and_workspace" method="post" name="hb-embedded-subscribe-form" onsubmit="document.getElementById('hb-embedded-subscribe').innerHTML='Thank You!'; document.getElementById('hb-embedded-subscribe').disabled=true; ">
-
+        <span class="disable-form" ng-class="{'open' : companySettingsWidgetVm.class_status}"></span>
+        <form id="hb-embedded-subscribe-form" class="validate hb-embedded-subscribe-form ng-pristine ng-valid" action="https://honeybook-payments-dev.herokuapp.com/api/v2/workspace/widget_create_user_and_workspace" method="post" name="hb-embedded-subscribe-form" onsubmit="document.getElementById('hb-embedded-subscribe').innerHTML='Thank You!'; document.getElementById('hb-embedded-subscribe').disabled=true; ">
+            
             <div id="hb_embed_signup_scroll">
-                <input id="vendor-email" name="vendor_email" value="jilly.ink@gmail.com" type="hidden">
-                <input id="widget-token" name="widget_token" value="7a576bbc79773099487c9260651a89e97db391cd" type="hidden">
-                <div class="hb-field-group">
-                    <label for="hbf-client-email">Email Address<span class="asterisk">*</span></label>
-                    <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="Email Address" required="true">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-full-name">Full Name<span class="asterisk">*</span></label>
-                    <input id="hbf-full-name" class="required" type="text" name="full_name" placeholder="Full Name" required="true">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-phone">Phone</label>
-                    <input id="hbf-phone" type="text" name="phone_number" placeholder="Phone">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-event-date">Event Date</label>
-                    <input id="hbf-event-date" type="text" name="event_date" placeholder="MM/DD/YY">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-location">Location</label>
-                    <input id="hbf-location" type="text" name="event_location" placeholder="Location">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-guests">Estimated Guests?</label>
-                    <input id="hbf-guests" type="text" name="event_guests" placeholder="Estimated Guests?">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-budget">Estimated Budget?</label>
-                    <input id="hbf-budget" type="text" name="event_budget" placeholder="Estimated Budget?">
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-event-details">Tell us about your event?</label>
-                    <textarea id="hbf-event-details" type="text" name="event_details" placeholder="Tell us about your event?"></textarea>
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-services">What services are you interested in?</label>
-                    <textarea id="hbf-services" type="text" name="event_services" placeholder="What services are you interested in?"></textarea>
-                </div>
-                <div class="hb-field-group">
-                    <label for="hbf-hear-about">How did you hear about us?</label>
-                    <textarea id="hbf-hear-about" type="text" name="how_client_hear_about" placeholder="How did you hear about us?"></textarea>
-                </div>
-                <button id="hb-embedded-subscribe" class="button" type="submit">Send</button>
-            </div>
+                <input id="vendor-email" name="vendor_email" value="plannerqa@email.com" type="hidden">
+                    <input id="widget-token" name="widget_token" value="cf95555d8ca3c4fca6cc0f6cddf35c1003ec4eea" type="hidden">
+                        <div class="hb-field-group">
+                            <label for="hbf-client-email" translate="" class="ng-scope">Email Address</label><span class="asterisk">*</span>
+                            <input id="hbf-first-name" type="text" name="firstname" class="catch">
+                                <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="Email Address" required="true">
+                                    </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-full-name" translate="" class="ng-scope">Full Name</label><span class="asterisk">*</span>
+                            <input id="hbf-full-name" class="required" type="text" name="full_name" placeholder="Full Name" required="true">
+                                </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-phone" translate="" class="ng-scope">Phone</label>
+                            <input id="hbf-phone" type="text" name="phone_number" placeholder="Phone">
+                                </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-event-date" translate="" class="ng-scope">Event Date</label>
+                            <input id="hbf-event-date" type="text" name="event_date" placeholder="MM/DD/YY">
+                                </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-location" translate="" class="ng-scope">Location</label>
+                            <input id="hbf-location" type="text" name="event_location" placeholder="Location">
+                                </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-guests" translate="" class="ng-scope">Estimated Guests?</label>
+                            <input id="hbf-guests" type="text" name="event_guests" placeholder="Estimated Guests?">
+                                </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-budget" translate="" class="ng-scope">Estimated Budget?</label>
+                            <input id="hbf-budget" type="text" name="event_budget" placeholder="Estimated Budget?">
+                                </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-event-details" translate="" class="ng-scope">Tell us about your event?</label>
+                            <textarea id="hbf-event-details" type="text" name="event_details" placeholder="Tell us about your event?"></textarea>
+                        </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-services" translate="" class="ng-scope">What services are you interested in?</label>
+                            <textarea id="hbf-services" type="text" name="event_services" placeholder="What services are you interested in?"></textarea>
+                        </div>
+                        <div class="hb-field-group">
+                            <label for="hbf-hear-about" translate="" class="ng-scope">How did you hear about us?</label>
+                            <textarea id="hbf-hear-about" type="text" name="how_client_hear_about" placeholder="How did you hear about us?"></textarea>
+                            <textarea id="hbf-message" type="text" name="message" class="catch"></textarea>
+                        </div>
+                        <button id="hb-embedded-subscribe" class="button ng-scope" type="submit" translate="">Send</button>
+                        </div>
         </form>
     </div>
-
+    <script type="text/javascript">
+        setTimeout(function(){ document.getElementById('hbf-message').className = "catch"; document.getElementById('hbf-first-name').className = "catch"; }, 1);
+        </script>
+    <style type="text/css">
+        #hb_embed_signup .hb-field-group br { display: none;}
+        #hb_embed_signup .hb-field-group input.catch, #hb_embed_signup .hb-field-group textarea.catch { position: absolute !important; left: 300px !important; width: 80px; height: 15px; resize: none !important; top:20px !important; font-size: 5px !important; z-index: -1 !important; border: none !important; background: transparent !important;}
+        </style>
     <!--End hb_embed_signup-->
     <!--====================-->
+
 </div>
 
 
