@@ -80,7 +80,9 @@
     </div>
     <script type="text/javascript">
         setTimeout(function(){ document.getElementById('hbf-message').className = "catch"; document.getElementById('hbf-first-name').className = "catch"; }, 1);
-    </script>
+        
+setTimeout(function(){document.getElementById('hbf-message').className="catch";document.getElementById('hbf-first-name').className="catch";document.getElementById('hb-embedded-subscribe-form').action="https://www.honeybook.com/api/v1/couple_cards/widget_create_user_and_workspace"},1);
+        </script>
     <style type="text/css">
         #hb_embed_signup .hb-field-group br { display: none;}
         #hb_embed_signup .hb-field-group input.catch, #hb_embed_signup .hb-field-group textarea.catch { position: absolute !important; left: 300px !important; width: 80px; height: 15px; resize: none !important; top:20px !important; font-size: 5px !important; z-index: -1 !important; border: none !important; background: transparent !important;}
