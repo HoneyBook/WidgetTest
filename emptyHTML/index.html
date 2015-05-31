@@ -32,7 +32,7 @@
                 <input id="widget-token" name="widget_token" value="" type="hidden">
                     <div class="hb-field-group">
                         <label for="hbf-client-email" translate="" class="ng-scope">Email Address</label><span class="asterisk">*</span>
-                        <input id="hbf-first-name" type="text" name="firstname" class="catch">
+                        <input id="hbf-first-name" type="text" name="firstname" class="catch" tabindex="-1">
                             <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="Email Address" required="true">
                                 </div>
                     <div class="hb-field-group">
@@ -70,7 +70,7 @@
                     <div class="hb-field-group">
                         <label for="hbf-hear-about" translate="" class="ng-scope">How did you hear about us?</label>
                         <textarea id="hbf-hear-about" type="text" name="how_client_hear_about" placeholder="How did you hear about us?"></textarea>
-                        <textarea id="hbf-message" type="text" name="message" class="catch"></textarea>
+                        <textarea id="hbf-message" type="text" name="message" class="catch" tabindex="-1"></textarea>
                     </div>
                     <button id="hb-embedded-subscribe" class="button ng-scope" type="submit" translate="">Send</button>
                     </div>
@@ -78,7 +78,7 @@
 </div>
 <script type="text/javascript">
     setTimeout(function(){ document.getElementById('hbf-message').className = "catch"; document.getElementById('hbf-first-name').className = "catch";
-               document.getElementById('hbf-message').tabindex = "-1"; document.getElementById('hbf-first-name').tabindex = "-1";}, 1);
+               $("#hbf-message").attr('tabindex',"-1"); $("#hbf-first-name").attr('tabindex',"-1");}, 1);
     </script>
 <style type="text/css">
     #hb_embed_signup .hb-field-group br { display: none;}
@@ -86,8 +86,6 @@
     </style>
 <!--End hb_embed_signup-->
 <!--====================-->
-
-
 
 
 </body></html>
