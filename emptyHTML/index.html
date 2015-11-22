@@ -18,55 +18,12 @@
         #hb_embed_signup .hb-field-group .asterisk {position:relative; float:right; right:5%;}
         #hb_embed_signup .asterisk {color:#c60; font-size:150%;}
         </style>
-    <div id="hb_embed_signup">
-        <form id="hb-embedded-subscribe-form" class="validate" action="https://honeybook-payments-dev.herokuapp.com/api/v1/couple_cards/widget_create_user_and_workspace" method="post" name="hb-embedded-subscribe-form" onsubmit="document.getElementById('hb-embedded-subscribe').innerHTML='Thank You!'; document.getElementById('hb-embedded-subscribe').disabled=true; ">
-            
-            <div id="hb_embed_signup_scroll">
-                <input id="vendor-email" name="vendor_email" value="vendor@vendor.com" type="hidden">
-                    <input id="widget-token" name="widget_token" value="" type="hidden">
-                        <div class="hb-field-group">
-                            <label for="hbf-client-email">Email Address<span class="asterisk">*</span></label>
-                            <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="Email Address" required="true">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-full-name">Full Name<span class="asterisk">*</span></label>
-                            <input id="hbf-full-name" class="required" type="text" name="full_name" placeholder="Full Name" required="true">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-phone">Phone</label>
-                            <input id="hbf-phone" type="text" name="phone_number" placeholder="Phone">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-event-date">Event Date</label>
-                            <input id="hbf-event-date" type="text" name="event_date" placeholder="MM/DD/YY">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-location">Location</label>
-                            <input id="hbf-location" type="text" name="event_location" placeholder="Location">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-guests">Estimated Guests?</label>
-                            <input id="hbf-guests" type="text" name="event_guests" placeholder="Estimated Guests?">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-budget">Estimated Budget?</label>
-                            <input id="hbf-budget" type="text" name="event_budget" placeholder="Estimated Budget?">
-                                </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-event-details">Tell us about your event?</label>
-                            <textarea id="hbf-event-details" type="text" name="event_details" placeholder="Tell us about your event?"></textarea>
-                        </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-services">What services are you interested in?</label>
-                            <textarea id="hbf-services" type="text" name="event_services" placeholder="What services are you interested in?"></textarea>
-                        </div>
-                        <div class="hb-field-group">
-                            <label for="hbf-hear-about">How did you hear about us?</label>
-                            <textarea id="hbf-hear-about" type="text" name="how_client_hear_about" placeholder="How did you hear about us?"></textarea>
-                        </div>
-                        <button id="hb-embedded-subscribe" class="button" type="submit">Send</button>
-                        </div>
-        </form>
+    
+    <script type="text/javascript" src="//d25purrcgqtc5w.cloudfront.net/assets/widgetiframe/iframeResizer.min.js"></script>
+    <iframe src="https://widget.honeybook.com/local_machines_assets/liorpesoa/companies/552d7f1b0a1b2a9471000235/widgets/honeybook_widget.html" frameBorder="0" width="100%" height="750"></iframe>
+    <script type="text/javascript">
+        iFrameResize({checkOrigin: false});
+        </script>
     </div>
     
     <!--End hb_embed_signup-->
