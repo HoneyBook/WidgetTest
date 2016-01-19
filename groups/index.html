@@ -1,0 +1,214 @@
+<html>
+
+<head lang="en">
+    <script type="text/javascript" src="//d25purrcgqtc5w.cloudfront.net/assets/widgetiframe/iframeResizer.contentWindow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("1b4568348f23e4e963f9779a7874bafd");</script><!-- end Mixpanel -->
+    <title>HoneyBook Form</title>
+    <style type="text/css">
+        #hb_embed_signup { clear: left; font: 14px Helvetica, Arial, sans-serif;}
+
+        #hb_embed_signup form {
+            display: block;
+            position: relative;
+            text-align: left;
+        }
+
+        #hb_embed_signup .hb-field-group {
+            clear: left;
+            position: relative;
+            width: 96%;
+            min-height: 20px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        #hb_embed_signup .hb-field-group input {
+            border: 1px solid #7bc8cd;
+        }
+
+        #hb_embed_signup .hb-field-group input[type],
+        #hb_embed_signup .hb-field-group textarea {
+            font-size: 12px;
+            display: block;
+            width: inherit;
+            border: 1px solid #7bc8cd;
+            padding: 7px;
+            -webkit-appearance: none;
+        }
+
+        #hb_embed_signup .hb-field-group textarea {
+            height: 40px;
+        }
+
+        #hb_embed_signup .hb-field-group label {
+            font-size: 13px;
+            color: inherit;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        #hb_embed_signup .button {
+            background-color: #7bc8cd;
+            -webkit-appearance: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+            width: auto;
+            cursor: pointer;
+            color: #ffffff;
+            border: 0 none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #hb_embed_signup .asterisk {
+            color: #c60;
+        }
+
+        #hb-signup-success { padding: 20px;
+            border: 1px solid #7bc8cd; text-align: center;}
+
+        #hb_embed_signup .hb-field-group #hbf-message, #hb_embed_signup .hb-field-group #hbf-first-name { border:0px solid; cursor: default; height: 2px; padding: 0px; background: transparent; min-height: 2px;}
+
+    </style>
+</head>
+<body>
+
+<div id="hb_embed_signup">
+    <span class="disable-form"></span>
+
+    <form id="hb-embedded-subscribe-form" class="validate hb-embedded-subscribe-form"
+          action="https://www.honeybook.com/api/v2/workspace/widget_inquiries" method="post"
+          name="hb-embedded-subscribe-form"
+          autocomplete="off"
+          onsubmit="document.getElementById(\'hb_embed_signup_scroll\').style.display=\'none\'; document.getElementById(\'hb-signup-success\').style.display=\'block\';if(window.should_track){ mixpanel.track(\'widget form submitted\', {\'vendor_id\': window.vendor_id});}">
+
+        <div id="hb_embed_signup_scroll">
+            <input id="vendor-id" name="vendor_id" value="XXXXXXXXXXXXXXXX" type="hidden">
+            <input id="vendor-name" name="vendor_name" value="XXXXXXXXXXXXXXXX" type="hidden">
+            <input id="src-host" name="src_host" value="XXXXXXXXXXXXXXXX" type="hidden">
+            <input id="widget-token" name="widget_token" value="XXXXXXXXXXXXXXXX" type="hidden">
+
+
+            <div class="hb-field-group">
+                <label for="hbf-full-name" translate="" >Name <span
+                        class="asterisk">*</span></label>
+                <input id="hbf-full-name" class="required" type="text" name="full_name" placeholder=""
+                       required="true">
+            </div>
+            <div class="hb-field-group">
+                <label for="hbf-client-email" translate="">Email<span class="asterisk">*</span></label>
+                <input id="hbf-first-name" type="text" name="firstname" tabindex="-1" autocomplete="off" style="border:0px solid; cursor: default; height: 2px; padding: 0px; background: transparent; min-height: 2px; position: absolute; top:0px; right:0px;"><!--Keep this field hidden from users-->
+                <input id="hbf-client-email" class="required" type="email" name="email" minlength="2" placeholder="" required="true">
+            </div>
+            <div class="hb-field-group">
+                <label for="hbf-phone" translate="" >Phone</label>
+                <input id="hbf-phone" type="text" name="phone_number" placeholder="">
+            </div>
+            <div class="hb-field-group">
+                <label for="hbf-event-date" translate="" >Event Date</label>
+                <input id="hbf-event-date" type="text" name="event_date" placeholder="MM/DD/YY">
+            </div>
+            <div class="hb-field-group">
+                <label for="hbf-location" translate="" >Event Location</label>
+                <input id="hbf-location" type="text" name="event_location" placeholder="">
+            </div>
+            <div class="hb-field-group">
+                <label for="hbf-event-details" translate="" >Tell us about your event</label>
+                <textarea id="hbf-event-details" type="text" name="event_details"
+                          placeholder=""></textarea>
+            </div>
+            <div class="hb-field-group">
+                <label for="hbf-services" translate="" >What services are you interested in?</label>
+                <input type="checkbox" name="event_services_rental" value="rental">Rentals <br>
+                <input type="checkbox" name="event_services_photographer" value="photographer" >Photographer<br>
+                <input type="checkbox" name="event_services_event_planner" value="event_planner" >Event Coordinator<br>
+                <input type="checkbox" name="event_services_fashion" value="fashion" >Styling<br>
+                <input type="checkbox" name="event_services_florist" value="florist" >Florals<br>
+                <input type="checkbox" name="event_services_hair_makeup" value="hair_makeup" >Hair &amp; Makeup<br>
+                <input type="checkbox" name="event_services_hair_stationery" value="stationery" >Stationary<br>
+                <input type="checkbox" name="event_services_hair_venue" value="venue" >Venue<br>
+                <input type="checkbox" name="event_services_hair_dj_musician" value="dj_musician" >DJ<br>
+                <input type="checkbox" name="event_services_hair_other" value="other" >Everything<br>
+
+                <!--  :cake, :caterer, :photo_booth, :cinematography, :event_lighting, :officiant
+                 -->            </div>
+            <div class="hb-field-group">
+                <label for="hbf-hear-about" translate="" >How did you hear about us?</label>
+                <select id="hbf-hear-about" name="how_client_hear_about"  style="border:0px solid; cursor: default; height: 2px; padding: 0px; background: transparent; min-height: 2px; position: absolute; top:0px; right:0px;">
+                    <option value="yelp">Yelp</option>
+                    <option value="weddingwire">Wedding Wire</option>
+                    <option value="member">Collective Member</option>
+                    <option value="aislesociety">Aisle Society</option>
+                </select><!--Keep this field hidden from users-->
+
+                <div class="hb-field-group">
+                    <label for="hbf-other-source" translate="" >Other source</label>
+                    <input id="hbf-other-source" type="text" name="other_source" placeholder="">
+                </div>
+            </div>
+            <button id="hb-embedded-subscribe" class="button" type="submit" translate="">Send</button>
+        </div>
+        <div id="hb-signup-success" style="display:none;">
+            Thank you!
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    setTimeout(function () {
+        //document.getElementById(\'hbf-message\').className = "catch";
+        document.getElementById(\'hbf-first-name\').className = "catch";
+        document.getElementById(\'src-host\').value = window.location.hostname;
+
+
+        window.vendor_id = $("#vendor-id").val();
+
+        mixpanel.identify(window.vendor_id);
+        mixpanel.people.set({
+            "$name" : $("#vendor-name").val()
+        });
+
+        window.should_track = $("#hb-embedded-subscribe-form").attr("action").indexOf("www.honeybook.com") > -1;
+
+        if(window.should_track){
+            mixpanel.track("widget iframe loaded", {
+                "vendor_id": window.vendor_id
+            });
+        }
+
+    }, 100);
+</script>
+<style type="text/css">
+    #hb_embed_signup .hb-field-group br {
+        display: none;
+    }
+    #hb_embed_signup .hb-field-group input.catch, #hb_embed_signup .hb-field-group textarea.catch {
+        display:none;
+    }
+</style>
+<!--End hb_embed_signup-->
+<!--====================-->
+
+</body>
+
+
+<!--<head></head>-->
+<!--<body>-->
+
+<!--<script type="text/javascript" src="//d25purrcgqtc5w.cloudfront.net/assets/widgetiframe/iframeResizer.min.js"></script>-->
+<!--<iframe src="https://widget.honeybook.com/assets_users_production/companies/560ac8d39865388009000326/widgets/honeybook_widget.html" frameBorder="0" width="100%" height="750"></iframe>-->
+<!--<script type="text/javascript">-->
+<!--iFrameResize({checkOrigin: false});-->
+<!--</script>-->
+
+
+
+<!--</body>-->
+</html>
